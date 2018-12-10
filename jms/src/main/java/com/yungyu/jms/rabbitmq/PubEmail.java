@@ -34,7 +34,7 @@ public class PubEmail {
         Map map = new HashMap();
         map.put("sendto", "");
         map.put("subject", "测试邮件");
-        map.put("content", "注册成功，你的验证码为23198");
+        map.put("content", "注册成功，你的验证码为" + System.currentTimeMillis());
         ConnectionFactory factory = null;
         Connection connection = null;
         Channel channel = null;
@@ -50,7 +50,7 @@ public class PubEmail {
             e.printStackTrace();
         }finally {
             try{
-                Thread.sleep(30 * 1000);
+                //Thread.sleep(30 * 1000);
                 if(channel != null){
                     channel.close();
                 }
