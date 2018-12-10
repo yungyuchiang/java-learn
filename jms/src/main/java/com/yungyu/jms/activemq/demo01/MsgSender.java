@@ -1,4 +1,4 @@
-package com.yungyu.jms.demo01;
+package com.yungyu.jms.activemq.demo01;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.command.ActiveMQQueue;
