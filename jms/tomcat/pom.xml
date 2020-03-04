@@ -2,6 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>jms</artifactId>
         <groupId>com.yungyu</groupId>
@@ -9,10 +11,6 @@
     </parent>
 
     <artifactId>tomcat</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-
-    <modelVersion>4.0.0</modelVersion>
 
     <dependencies>
         <dependency>
@@ -25,7 +23,12 @@
             <artifactId>tomcat-jasper</artifactId>
             <version>9.0.30</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-catalina</artifactId>
+            <version>9.0.30</version>
+        </dependency>
 
     </dependencies>
 

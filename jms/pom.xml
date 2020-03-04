@@ -10,10 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.yungyu</groupId>
     <artifactId>jms</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
 
     <modules>
         <module>tomcat</module>
@@ -21,20 +18,6 @@
     </modules>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-core -->
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-core</artifactId>
-            <version>5.7.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
-        <dependency>
-            <groupId>com.rabbitmq</groupId>
-            <artifactId>amqp-client</artifactId>
-            <version>5.4.3</version>
-        </dependency>
-
 
     </dependencies>
 

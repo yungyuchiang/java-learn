@@ -14,7 +14,7 @@ public class TomcatApp {
     public static void main(String[] args) throws LifecycleException, InterruptedException {
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(8989);
-        tomcat.addWebapp("/web", "G:\\IDEAProjects\\java-learn\\jms\\tomcat\\web");
+        tomcat.addWebapp("/web", System.getProperty("user.dir") + "/jms/tomcat/web");
         // tomcat.setBaseDir("G:\\IDEAProjects\\java-learn\\jms\\tomcat\\log");
         tomcat.start();
         tomcat.getServer().await();
