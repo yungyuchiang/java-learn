@@ -11,6 +11,8 @@
 
     <modules>
         <module>jms</module>
+        <module>jvm</module>
+        <module>tomcat</module>
     </modules>
 
     <dependencies>
