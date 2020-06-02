@@ -14,12 +14,13 @@ import java.io.PrintWriter;
  * @Description:
  * @Modified:
  */
-@WebServlet(name = "MyServlet", urlPatterns = "/my")
+@WebServlet(name = "myServlet", urlPatterns = "/my")
 public class MyServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // super.doGet(req, resp);
+        System.out.println("Hello, Servlet 3");
         PrintWriter out = resp.getWriter();
         out.println("Hello, Servlet 3");
     }

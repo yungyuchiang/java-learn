@@ -13,9 +13,11 @@ public class TomcatApp {
 
     public static void main(String[] args) throws LifecycleException, InterruptedException {
         Tomcat tomcat = new Tomcat();
+        tomcat.setHostname("localhost");
         tomcat.setPort(8989);
-        tomcat.addWebapp("/web", System.getProperty("user.dir") + "/jms/tomcat/web");
-        // tomcat.setBaseDir("G:\\IDEAProjects\\java-learn\\jms\\tomcat\\log");
+        // tomcat.getHost().setAppBase(System.getProperty("user.dir") + "/tomcat/web");
+        // tomcat.addWebapp("/web", System.getProperty("user.dir") + "/tomcat/web/");
+        tomcat.addWebapp("", System.getProperty("user.dir") + "/tomcat/web");
         tomcat.start();
         tomcat.getServer().await();
     }
