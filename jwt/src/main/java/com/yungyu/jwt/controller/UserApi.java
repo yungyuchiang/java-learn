@@ -3,6 +3,7 @@ package com.yungyu.jwt.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.yungyu.jwt.entity.User;
 import com.yungyu.jwt.service.IUserService;
+import com.yungyu.jwt.token.PassToken;
 import com.yungyu.jwt.token.UserLoginToken;
 import com.yungyu.jwt.util.TokenUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ public class UserApi {
     @Autowired
     private IUserService userService;
 
+    @PassToken
     @PostMapping("/login")
     public Object login(@RequestBody User user) {
         JSONObject jsonObject = new JSONObject();
