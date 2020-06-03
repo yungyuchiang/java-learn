@@ -25,6 +25,7 @@
         <module>jvm</module>
         <module>tomcat</module>
         <module>jwt</module>
+        <module>security_jwt</module>
     </modules>
 
     <dependencies>
