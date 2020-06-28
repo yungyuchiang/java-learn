@@ -18,14 +18,17 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <kotlin.version>1.3.72</kotlin.version>
     </properties>
 
     <modules>
-        <module>jms</module>
         <module>jvm</module>
         <module>tomcat</module>
         <module>jwt</module>
         <module>security_jwt</module>
+        <module>springboot-redis</module>
+        <module>javafx</module>
+        <module>spring-netty</module>
     </modules>
 
     <dependencies>
