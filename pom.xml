@@ -28,7 +28,6 @@
         <module>security_jwt</module>
         <module>springboot-redis</module>
         <module>javafx</module>
-        <module>spring-netty</module>
     </modules>
 
     <dependencies>
