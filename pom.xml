@@ -28,6 +28,7 @@
         <module>security_jwt</module>
         <module>springboot-redis</module>
         <module>javafx</module>
+        <module>studentmanager</module>
     </modules>
 
     <dependencies>
