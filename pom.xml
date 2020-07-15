@@ -29,6 +29,7 @@
         <module>springboot-redis</module>
         <module>javafx</module>
         <module>studentmanager</module>
+        <module>musicdemo</module>
     </modules>
 
     <dependencies>
